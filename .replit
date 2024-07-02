@@ -1,9 +1,10 @@
 compile = "make all"
 run = "./project"
 hidden = ["main", "main-debug", "**/*.o", "**/*.d", ".ccls-cache", "Makefile"]
+modules = ["c-clang14", "nix"]
 
 [nix]
-channel = "stable-22_11"
+channel = "stable-23_11"
 
 [gitHubImport]
 requiredFiles = [".replit", "replit.nix", ".ccls-cache"]
